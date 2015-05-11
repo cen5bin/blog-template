@@ -53,6 +53,7 @@ h1 {
     height: 200px;
     text-align: center;
     color: white;
+    position: relative;
 }
 
 #blog-title {
@@ -80,10 +81,9 @@ h1 {
 #navigator {
     /*background-color: white;*/
     padding: 0px;
-    position: relative;
-    top: 35px;
-    /*bottom: 110px;*/
-    /*color: black;*/
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
 }
 
 #footer {
