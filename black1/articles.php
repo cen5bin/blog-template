@@ -1,6 +1,22 @@
+<!--显示所有文章的列表-->
 <div id="post-title-list">
-    <h1>Articles</h1>
-<?php if (have_posts()) {
+
+<?php
+$offset = $_GET['offset'];
+$category = $_GET['category'];
+if ($offset == null) $offset = 1;
+$args = array('posts_per_page'=>POST_LIST_PER_PAGE,
+    'paged'=>$offset,
+    'orderby'=>'date',
+    'order'=>'DESC');
+if ($category != null) {
+    $args['cat'] = $category;
+    echo '<h1 class="center">'.get_category($category)->cat_name.'</h1>';
+}
+else echo '<h1 class="center">Articles</h1>';
+query_posts($args);
+
+if (have_posts()) {
     while (have_posts()) {
         the_post();?>
 
@@ -26,6 +42,8 @@
                 </span>
             </div>
         </div>
-<?php }} ?>
+<?php
+
+    }}wp_reset_query(); ?>
 
 </div>

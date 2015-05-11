@@ -1,3 +1,4 @@
+<!--显示一篇文章-->
 <div class="post-container" id="post-<?php the_ID();?>">
 
     <div class="post-content-container">

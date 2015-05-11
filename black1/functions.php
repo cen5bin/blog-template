@@ -27,4 +27,8 @@ function my_remove_recent_comments_style() {
 //}
 //add_action( 'init', 'coolwp_remove_open_sans_from_wp_core' );
 
+define('POST_LIST_PER_PAGE', 25);
+
+
+
 ?>

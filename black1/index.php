@@ -3,10 +3,12 @@
 <div id="container">
 
     <?php
-        $type = $_GET['type'];
-        if (!$type) $type = 'content';
-        if ($type == 'content') get_template_part('homepage');
-        else if ($type == 'articles') get_template_part('articles');
+        if (is_single()) get_template_part('content');
+        else {
+            $type = $_GET['type'];
+            if (!$type) $type = 'homepage';
+            get_template_part($type);
+        }
         ?>
 </div>
 <?php //echo get_template_directory_uri();?>
