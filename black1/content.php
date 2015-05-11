@@ -19,6 +19,8 @@
                     }
                 }
                 else echo '未分类';
+//            echo '|';
+            edit_post_link('编辑', '&nbsp;&nbsp;|&nbsp;&nbsp;');
             ?>
                 </span>
         </div>
