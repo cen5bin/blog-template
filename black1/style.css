@@ -7,17 +7,16 @@ html, body {
     word-wrap: break-word;
     text-align: justify;
 
-
     height:100%;
     font-size:100%;
     border:0;
     margin:0;
-    font-family: 'Dosis','Helvetica Neue','Arial','Verdana','H-BuMing','FZNew XiuLi-Z11','Hiragino Mincho ProN','YuMincho','Adobe Ming Std','LiSong Pro Light','Songti TC','PMingLiU',serif;;
-    /*"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;*/
+    font-family: 'Helvetica Neue',Helvetica, Arial ,sans-serif;
 }
 
 div {
     overflow: auto;
+    line-height: 1.5;
 }
 
 a {
@@ -27,8 +26,10 @@ a {
 }
 
 h1 {
+    /*padding: 0;*/
     font-size: 40px;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
 #navigator a:hover {
@@ -59,7 +60,6 @@ h1 {
 #blog-title {
     margin-top: 35px;
     font-size: 62px;
-    /*background-color: white;*/
 }
 
 #navigator ul {
@@ -79,7 +79,6 @@ h1 {
 }
 
 #navigator {
-    /*background-color: white;*/
     padding: 0px;
     position: absolute;
     bottom: 10px;
@@ -111,9 +110,6 @@ h1 {
 }
 
 .post-content-container {
-    /*max-width: 1024px;*/
-    /*width: 75%;*/
-    /*margin: auto;*/
     min-height: 500px;
 }
 
@@ -125,7 +121,42 @@ h1 {
 
 .post-title-item a{
     color: black;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+.post-title-item {
+    /*width: 50%;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+#post-title-list {
+    max-width: 600px;
+    margin: auto;
+    min-height: 500px;
+    /*margin-top: 20px;*/
+}
+
+#post-title-list h1{
+    text-align: center;
+}
+
+/*.post-title-item-time:before {*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*height: 100%;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+.post-title-item-time {
+    font-size: 14px;
+    color: #666666;
+    right: 0px
+;
+    position: absolute;
+    bottom: 1px;
+    /*line-height: 100%;*/
 }
 
 .post-content {
@@ -135,21 +166,6 @@ h1 {
     line-height: 1.5;
     display: block;
 }
-
-/*.post-content p {*/
-    /*text-align: justify;*/
-    /*display: block;*/
-    /*zoom: 1;*/
-    /*text-align-last: center;*/
-    /*font-size: 18px;*/
-    /*line-height: 1.5;*/
-/*}*/
-
-/*.post-content p:after {*/
-    /*content: '';*/
-    /*width: 100%;*/
-    /*display: inline-block;*/
-/*}*/
 
 .post-metadata, .post-metadata a {
     /*text-align: left;*/
@@ -169,4 +185,15 @@ a.underline {
 
 .post-title {
     font-weight: lighter;
+}
+
+.small-font {
+    font-size: 14px !important;
+}
+.text-color1 {
+    color: #666666 !important;
+}
+
+.right-align {
+    float: right !important;
 }
