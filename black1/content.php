@@ -1,7 +1,7 @@
 <div class="post-container" id="post-<?php the_ID();?>">
 
     <div class="post-content-container">
-        <h1> <a href="<?php the_permalink();?>"> <?php the_title(); ?> </a></h1>
+        <h1 class="post-title"> <a href="<?php the_permalink();?>"> <?php the_title(); ?> </a></h1>
         <div class="post-metadata">
             发表于<?php the_time('Y-m-d G:i');?> &nbsp;|&nbsp; <span>分类：
             <?php
