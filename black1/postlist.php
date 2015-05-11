@@ -13,7 +13,7 @@ if ($category != null) {
     $args['cat'] = $category;
     echo '<h1 class="center">'.get_category($category)->cat_name.'</h1>';
 }
-else echo '<h1 class="center">Articles</h1>';
+else echo '<h1 class="center">Post List</h1>';
 query_posts($args);
 
 if (have_posts()) {
