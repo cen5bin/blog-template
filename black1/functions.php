@@ -29,6 +29,9 @@ function my_remove_recent_comments_style() {
 
 define('POST_LIST_PER_PAGE', 25);
 
-
+//产生category对应的链接
+function black1_generate_category_link($category) {
+    return bloginfo('url').'/?type=postlist&category='.$category->term_id;
+}
 
 ?>

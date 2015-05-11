@@ -27,9 +27,9 @@
     <div id="navigator">
         <ul>
             <li><a href="<?php bloginfo('url');?>">Home</a></li>
-            <li><a href="<?php bloginfo('url');?>/?type=articles">Articles</a></li>
+            <li><a href="<?php bloginfo('url');?>/?type=postlist">Post list</a></li>
             <li><a href="<?php bloginfo('url');?>/?type=categories">Categories</a></li>
-            <li><a href="#">Tags</a></li>
+<!--            <li><a href="--><?php //bloginfo('url');?><!--/?type=archives">Archives</a></li>-->
             <li><a href="#">About me</a></li>
         </ul>
     </div>

@@ -1,9 +1,11 @@
 <?php get_header('normal');?>
 
+
+
 <div id="container">
 
     <?php
-        if (is_single()) get_template_part('content');
+        if (is_single()) get_template_part('homepage');
         else {
             $type = $_GET['type'];
             if (!$type) $type = 'homepage';

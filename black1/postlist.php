@@ -22,7 +22,7 @@ if (have_posts()) {
 
     <div class="post-title-item"> <a href="<?php the_permalink();?>"> <?php the_title(); ?></a>
 
-            <div class="post-title-item-time">发表于<?php the_time('Y-m-d G:i'); ?>|
+            <div class="post-title-item-time">发表于<?php the_time('Y-m-d G:i'); ?>&nbsp;|
 
             <span class="text-color1">分类：
                 <?php
@@ -33,7 +33,8 @@ if (have_posts()) {
                         if ($x) echo ',';
                         $x++;
                         ?>
-                        <a class="underline small-font text-color1" href="<?php echo get_category_link($category->term_id);?>"> <?php echo $category->cat_name;?></a>
+                        <a class="underline small-font text-color1" href="<?php echo black1_generate_category_link($category);?>" >
+                            <?php echo $category->cat_name;?></a>
                     <?php
                     }
                 }

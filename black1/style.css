@@ -118,6 +118,7 @@ h1 {
     border: thin none;
     height: 1px;
     background: none repeat 0 0 #cccccc;
+    margin-top: 100px;
 }
 
 .post-title-item a{

@@ -7,7 +7,7 @@
     <ul>
         <?php foreach($categories as $category) { ?>
         <li class="center"> <a href="<?php
-	echo get_bloginfo('url').'/?type='.'articles'.'&category='.$category->cat_ID;
+	echo black1_generate_category_link($category);
 ?>"><?php echo $category->name;?></a> (<?php echo $category->count;?>)</li>
 
       <?php  }?>

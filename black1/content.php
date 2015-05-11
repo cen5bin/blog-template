@@ -13,7 +13,8 @@
                         if ($x) echo ',';
                         $x++;
                         ?>
-                        <a class="underline" href="<?php echo get_category_link($category->term_id);?>"> <?php echo $category->cat_name;?></a>
+                        <a class="underline" href="<?php echo black1_generate_category_link($category);?>">
+                            <?php echo $category->cat_name;?></a>
             <?php
                     }
                 }
