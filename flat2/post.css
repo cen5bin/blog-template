@@ -29,10 +29,14 @@
     color: #333333;
 }
 
-.post-content div {
+.post-content > div, .post-content > p {
     text-indent: 2em;
     /*white-space: pre;*/
     /*word-wrap: break-word;*/
+}
+
+.post-content li {
+    list-style-position: inside;
 }
 
 .post-content > div {
