@@ -7,29 +7,28 @@
  */
 
 
-$post_id = null;
 
 function deal_with_request() {
-    global $post_id;
     $request = $_SERVER['QUERT_STRING'];
 //    if (strlen($request) == 0) {
 //        echo 'index';
 //        include('post.php');
 //    }
 //    else
+    include('post.php'); return;
         if ($_REQUEST['p']) {
-            $post_id = $_REQUEST['p'];
-//            echo $_REQUEST['p'];
             include('post.php');
     }
 }
 
-function get_newest_post() {
-    
+function get_the_post() {
+    $post_id = $_REQUEST['p'];
+    if ($post_id) query_posts('p='.$post_id);
+    else query_posts(array('posts_per_page'=>1, 'paged'=>0, 'orderby'=>'date', 'order'=>'DESC'));
+
 }
 
-function get_post_id() {
-    global $post_id;
-    return $post_id;
-//    $post_id = $_REQUEST['p'];
+function get_all_category() {
+    $args = array('orderby'=>'name', 'order'=>'ASC');
+    return get_categories($args);
 }

@@ -1,6 +1,6 @@
 <div class="post-container">
 <?php
-    query_posts('p='.get_post_id());
+    get_the_post();
     if (have_posts()) {
 
         the_post();
@@ -17,7 +17,7 @@
         <?php
         }
         ?>
-        <span>发表于 <?php the_time('Y-m-d G:i');?> </span>
+        <span>发表于 <?php the_time('Y-m-d G:i');?> <?php edit_post_link('edit', '|&nbsp;'); ?></span>
     </div><br>
     <div class="post-content">
         <?php
