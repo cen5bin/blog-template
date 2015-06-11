@@ -1,0 +1,8 @@
+.post-container {
+    max-width: 800px;
+    min-width: 600px;
+    width: 90%;
+    margin: auto;
+    min-height: 100%;
+    background-color: red;
+}
