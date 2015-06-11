@@ -3,6 +3,63 @@
     min-width: 600px;
     width: 90%;
     margin: auto;
-    min-height: 100%;
-    background-color: red;
+    min-height: calc(100% - 200px - 20px);
+    min-height: -moz-calc(100% - 200px - 20px);
+    min-height: -webkit-calc(100% - 200px - 20px);
+    /*background-color: red;*/
+}
+
+.post-container > h1 {
+    /*text-align: center;*/
+    margin-top: 20px;
+    /*height: 100px;*/
+    font-size: 40px;
+    color: rgb(0, 190, 107);
+}
+
+.post-content {
+    text-align: justify;
+    text-justify: auto;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #333333;
+}
+
+.post-content div {
+    text-indent: 2em;
+    /*white-space: pre;*/
+    /*word-wrap: break-word;*/
+}
+
+.post-content > div {
+    margin-top: 15px;
+}
+
+
+.post-info {
+    color: #666666;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: right;
+    /*background-color: gray;*/
+    padding-left: 20px;
+}
+
+.post-info > span {
+    /*float: right;*/
+}
+
+.post-category-tag {
+    display: inline;
+    border-radius: 4px;
+    background-color: #cccccc;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*padding: 5px 10px;*/
+    font-size: 14px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
 }

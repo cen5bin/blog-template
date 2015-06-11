@@ -6,9 +6,9 @@
 
     <div id="menu">
         <ul>
-            <a href="#"><li>HOME</li></a>
-            <a href="#"><li>ARTICLE</li></a>
-            <a href="#"><li>CATEGORY</li></a>
+            <a href="#"><li>home</li></a>
+            <a href="#"><li>article</li></a>
+            <a href="#"><li>category</li></a>
         </ul>
     </div>
 </div>
