@@ -65,7 +65,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color: white;
+    background-color: #3a3a3a;
     overflow-y: auto;
     border-left: 1px solid #eeeeee;
     /*z-index: 9;*/
@@ -99,7 +99,7 @@
 .category-item {
     width: 80%;
     margin: auto;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #444;
     height: 60px;
     padding-left: 20px;
     box-sizing: border-box;
@@ -109,7 +109,7 @@
 
 
 .category-item-name {
-    color: #333333;
+    color: #ccc;
     font-size: 20px;
     padding-top: 5px;
     /*margin-top: 5px;*/
