@@ -53,10 +53,10 @@
     height: 100%;
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
     background-color: white;
     overflow-y: auto;
-    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
     /*z-index: 9;*/
 }
 

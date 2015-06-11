@@ -6,9 +6,9 @@
 
     <div id="menu">
         <ul>
-            <a href="."><li>home</li></a>
-            <a href="#"><li>article</li></a>
-            <a href="#" onclick="list_category();"><li id="menu-item-category">category</li></a>
+            <a href="."><li>博客首页</li></a>
+            <a href="?type=all"><li>全部文章</li></a>
+            <a href="#" onclick="list_category();"><li id="menu-item-category">分类目录</li></a>
         </ul>
     </div>
 </div>
@@ -19,7 +19,7 @@
         if ($('#category-container').css('display') == 'none') {
 //            $('#menu-item-category').attr('class', 'menu-item-active');
             $('#category-container').css('display', 'block').animate({
-                left: side_bar_width + 'px',
+                right: side_bar_width + 'px',
                 opacity: '1'
             }, 300);
         }
@@ -31,7 +31,7 @@
         var side_bar_width = parseInt($('#side-bar').css('width'));
         var category_container_width = parseInt($('#category-container').css('width'));
         $('#category-container').animate({
-            left: (side_bar_width - category_container_width) + 'px',
+            right: (side_bar_width - category_container_width) + 'px',
             opacity: '0'
         }, 300, function () {
             $('#category-container').css('display', 'none');

@@ -13,7 +13,7 @@
         $cates = get_the_category();
         foreach ($cates as $cate) {
             ?>
-            <a href="#"><div class="post-category-tag"><?php echo $cate->cat_name;?></div></a>
+            <a href="?catid=<?php echo $cate->term_id;?>"><div class="post-category-tag"><?php echo $cate->cat_name;?></div></a>
         <?php
         }
         ?>

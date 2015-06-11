@@ -1,6 +1,4 @@
 <?php get_header();?>
-<?php include('category.php'); ?>
-<?php include('sidebar.php');?>
 
 <div id="main-container">
 <?php deal_with_request();?>
@@ -9,6 +7,10 @@
         <div id="footer-content"></div>
     </div>
 </div>
+
+<?php include('category.php'); ?>
+<?php include('sidebar.php');?>
+
 
 <?php get_footer();?>
 
