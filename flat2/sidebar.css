@@ -1,0 +1,123 @@
+#side-bar {
+    width: 250px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #eeeeee;
+    background-color: #333;
+    /*z-index: 10;*/
+    position: relative;
+}
+
+#side-bar img {
+    width: 100px;
+    height: auto;
+    left: calc(50% - 50px);
+    left: -moz-calc(50% - 50px);
+    left: -webkit-calc(50% - 50px);
+    position: absolute;
+    bottom: 20px;
+    /*margin-left: 100px;*/
+}
+
+#title {
+    color: #bbb;
+    width: 220px;
+    margin: auto;
+    text-align: center;
+}
+
+#title h1 {
+    margin-top: 20px;
+    font-size: 52px;
+    color: #ccc;
+}
+
+#menu li {
+    color: #999;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 80px;
+    transition: background-color 0.2s;
+    text-transform: capitalize;
+}
+
+
+
+#menu li:hover, #menu .menu-item-active {
+    background-color: rgb(0, 190, 107);
+    color: white;
+}
+
+
+
+
+#menu ul {
+    padding: 0px;
+    margin-top: 100px;
+}
+
+#category-container {
+    display: none;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #3a3a3a;
+    overflow-y: auto;
+    border-left: 1px solid #eeeeee;
+    /*z-index: 9;*/
+}
+
+#category-container:last-child {
+    border: none !important;
+}
+
+.category-item-container {
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.category-item-container:hover {
+    background-color: rgb(0, 190, 107);
+}
+
+.category-item-container:hover .category-item {
+    border-bottom: none;
+}
+
+.category-item-container:hover .category-item-name {
+    color: white;
+}
+
+.category-item-container:hover .category-item-count {
+    color: white;
+}
+
+.category-item {
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #444;
+    height: 60px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+.category-item-name {
+    color: #ccc;
+    font-size: 20px;
+    padding-top: 5px;
+    /*margin-top: 5px;*/
+}
+
+.category-item-count {
+    margin-top: 5px;
+    color: #999999;
+    font-size: 12px;
+    font-weight: 100;
+}

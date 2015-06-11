@@ -1,0 +1,132 @@
+.post-container, #post-list-container {
+    max-width: 800px;
+    min-width: 600px;
+    width: 90%;
+    margin: auto;
+    min-height: calc(100% - 200px - 20px);
+    min-height: -moz-calc(100% - 200px - 20px);
+    min-height: -webkit-calc(100% - 200px - 20px);
+    /*background-color: red;*/
+}
+
+.post-container > h1 {
+    /*text-align: center;*/
+    margin-top: 20px;
+    /*height: 100px;*/
+    font-size: 40px;
+    color: rgb(0, 190, 107);
+}
+
+.post-container .post-info .post-category-tag{
+    margin-top: 8px;
+}
+
+.post-content {
+    text-align: justify;
+    text-justify: auto;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #333333;
+}
+
+.post-content div {
+    text-indent: 2em;
+    /*white-space: pre;*/
+    /*word-wrap: break-word;*/
+}
+
+.post-content > div {
+    margin-top: 15px;
+}
+
+
+.post-info {
+    color: #666666;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: right;
+    /*background-color: gray;*/
+    padding-left: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.post-info > span a {
+    text-decoration: underline;
+    color: #005599;
+}
+
+.post-category-tag {
+    display: inline;
+    border-radius: 15px;
+    background-color: rgb(46, 123,179);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 40px;
+    text-align: center;
+    /*padding: 5px 10px;*/
+    font-size: 12px;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.post-item {
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 5px;
+    transition: background-color 0.3s;
+    min-height: 100px;
+    position: relative;
+}
+
+#post-list-container h1 {
+    color: rgb(0, 190, 107);
+    margin-top: 20px;
+}
+
+#post-list-container {
+    min-height: calc(100% - 200px - 20px);
+    min-height: -moz-calc(100% - 200px - 20px);
+    min-height: -webkit-calc(100% - 200px - 20px);
+}
+
+.post-item-title {
+    max-height: 2.5em;
+    /*white-space: nowrap;*/
+    font-size: 20px;
+    overflow: hidden;
+    color: #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.post-item:hover {
+    background-color: rgb(0, 190, 107);
+}
+
+.post-item:hover .post-item-title {
+    color: white;
+}
+
+.post-item:hover .post-info {
+    color: white;
+
+}
+
+.post-item:hover .post-category-tag {
+    background-color: white;
+    color: rgb(46, 123,179);
+}
+
+.post-item .post-info {
+    position: absolute;
+    bottom: 0px;
+}
