@@ -30,6 +30,7 @@ div {
     overflow-y: auto;
     float: left;
     border: none;
+    position: relative;
     /*background-color: #eeeeee;*/
     /*font-size: 100px;*/
 }
@@ -44,8 +45,9 @@ div {
 #footer-content {
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    width: 100%;
+    left: 10%;
+    width: 80%;
     height: 100px;
-    background-color: #333333;
+    border-top: 1px dashed #ddd;
+    /*background-color: #333333;*/
 }

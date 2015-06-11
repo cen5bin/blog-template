@@ -3,7 +3,7 @@
     height: 100%;
     float: left;
     border-right: 1px solid #eeeeee;
-    background-color: #f4f4f4;
+    background-color: #333;
     /*z-index: 10;*/
     position: relative;
 }
@@ -20,7 +20,7 @@
 }
 
 #title {
-    color: #444;
+    color: #bbb;
     width: 220px;
     margin: auto;
     text-align: center;
@@ -29,11 +29,11 @@
 #title h1 {
     margin-top: 20px;
     font-size: 52px;
-    color: #333;
+    color: #ccc;
 }
 
 #menu li {
-    color: #666666;
+    color: #999;
     list-style: none;
     height: 40px;
     line-height: 40px;
