@@ -3,7 +3,6 @@
         <h1><?php bloginfo('name');?></h1><br>
         <?php bloginfo('description'); ?>
     </div>
-
     <div id="menu">
         <ul>
             <a href="."><li>博客首页</li></a>
@@ -11,6 +10,8 @@
             <a href="#" onclick="list_category();"><li id="menu-item-category">分类目录</li></a>
         </ul>
     </div>
+    <img src="<?php echo get_template_directory_uri()?>/photo.jpg">
+
 </div>
 
 <script>

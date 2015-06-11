@@ -17,7 +17,7 @@
         <?php
         }
         ?>
-        <span>发表于 <?php the_time('Y-m-d G:i');?> <?php edit_post_link('edit', '|&nbsp;'); ?></span>
+        <span>发表于 <?php the_time('Y-m-d G:i');?> <?php if (function_exists('the_views')) {?>(<?php the_views();?>)<?php }?><?php edit_post_link('edit', '|&nbsp;'); ?></span>
     </div><br>
     <div class="post-content">
         <?php

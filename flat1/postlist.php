@@ -16,7 +16,7 @@
             foreach ($cates as $cate) {?>
                 <a href="?catid=<?php echo $cate->term_id;?>"><div class="post-category-tag"><?php echo $cate->cat_name;?></div></a>
             <?php } ?>
-            <span>发表于 <?php the_time('Y-m-d G:i');?> <?php edit_post_link('edit', '|&nbsp;'); ?></span>
+            <span>发表于 <?php the_time('Y-m-d G:i');?> <?php if (function_exists('the_views')) {?>(<?php the_views();?>)<?php }?><?php edit_post_link('edit', '|&nbsp;'); ?></span>
         </div>
         </div>
     <?php

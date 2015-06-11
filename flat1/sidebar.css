@@ -8,6 +8,17 @@
     position: relative;
 }
 
+#side-bar img {
+    width: 100px;
+    height: auto;
+    left: calc(50% - 50px);
+    left: -moz-calc(50% - 50px);
+    left: -webkit-calc(50% - 50px);
+    position: absolute;
+    bottom: 20px;
+    /*margin-left: 100px;*/
+}
+
 #title {
     color: #444;
     width: 220px;

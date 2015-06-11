@@ -17,6 +17,10 @@
     color: rgb(0, 190, 107);
 }
 
+.post-container .post-info .post-category-tag{
+    margin-top: 8px;
+}
+
 .post-content {
     text-align: justify;
     text-justify: auto;
