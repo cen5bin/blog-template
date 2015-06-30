@@ -29,7 +29,7 @@ blockquote p {
 }
 
 .post-container, #post-list-container {
-    max-width: 800px;
+    max-width: 700px;
     min-width: 600px;
     width: 90%;
     margin: auto;
@@ -55,12 +55,13 @@ blockquote p {
     text-align: justify;
     text-justify: auto;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     color: #333333;
 }
 
 .post-content > div, .post-content > p {
-    text-indent: 2em;
+    /*text-indent: 2em;*/
+    margin-top: 1em;
     /*white-space: pre;*/
     /*word-wrap: break-word;*/
 }
